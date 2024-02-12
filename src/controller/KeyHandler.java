@@ -3,6 +3,7 @@ import main.GamePanel;
 
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import static utilz.Constants.PlayerDirection.*;
 
 public class KeyHandler implements KeyListener {
     private GamePanel gamePanel;
@@ -18,16 +19,16 @@ public class KeyHandler implements KeyListener {
     public void keyPressed(KeyEvent e) {
         switch (e.getKeyCode()){
             case KeyEvent.VK_W, KeyEvent.VK_UP:
-                gamePanel.changeY(-5);
+                gamePanel.setDirection(UP);
                 break;
             case  KeyEvent.VK_S, KeyEvent.VK_DOWN:
-                gamePanel.changeY(5);
+                gamePanel.setDirection(DOWN);
                 break;
             case KeyEvent.VK_D, KeyEvent.VK_RIGHT:
-                gamePanel.changeX(5);
+                gamePanel.setDirection(RIGHT);
                 break;
             case KeyEvent.VK_A, KeyEvent.VK_LEFT:
-                gamePanel.changeX(-5);
+                gamePanel.setDirection(LEFT);
                 break;
         }
 
@@ -35,6 +36,13 @@ public class KeyHandler implements KeyListener {
 
     @Override
     public void keyReleased(KeyEvent e) {
-
+        switch (e.getKeyCode()){
+            case KeyEvent.VK_W, KeyEvent.VK_UP:
+            case  KeyEvent.VK_S, KeyEvent.VK_DOWN:
+            case KeyEvent.VK_D, KeyEvent.VK_RIGHT:
+            case KeyEvent.VK_A, KeyEvent.VK_LEFT:
+                gamePanel.setMoving(false);
+                break;
+        }
     }
 }

@@ -5,15 +5,18 @@ public class Game implements Runnable{
     private GameWindow gameWindow;
     private Thread gameThread;
     private final int FPS = 120;
-    public  Game(){
+    public Game(){
         gamePanel = new GamePanel();
         gameWindow = new GameWindow(gamePanel);
+        gamePanel.requestFocus();
         startGameLoop();
     }
     private void startGameLoop(){
         gameThread = new Thread(this);
         gameThread.start();
     }
+
+
 
     public void run() {
         double timePerFrame = 1000000000.0 / FPS;
