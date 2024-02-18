@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="884d5f10-6097-41bf-b4e5-dc08fd2359f8" name="Changes" comment="First">
+    <list default="true" id="884d5f10-6097-41bf-b4e5-dc08fd2359f8" name="Changes" comment="addMovingAction">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/KeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/KeyHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/MouseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MouseHandler.java" afterDir="false" />
@@ -74,7 +74,13 @@
       <workItem from="1707667139555" duration="408000" />
       <workItem from="1707711028401" duration="1624000" />
       <workItem from="1707727216720" duration="9138000" />
-      <workItem from="1707755848608" duration="2669000" />
+      <workItem from="1707755848608" duration="2786000" />
+      <workItem from="1707813277819" duration="2494000" />
+      <workItem from="1707816493363" duration="690000" />
+      <workItem from="1708020825838" duration="288000" />
+      <workItem from="1708177222882" duration="749000" />
+      <workItem from="1708178123233" duration="2483000" />
+      <workItem from="1708237900661" duration="5498000" />
     </task>
     <task id="LOCAL-00001" summary="First">
       <option name="closed" value="true" />
@@ -84,7 +90,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707139332615</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="addMovingAction">
+      <option name="closed" value="true" />
+      <created>1707758570926</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707758570926</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +129,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First" />
-    <option name="LAST_COMMIT_MESSAGE" value="First" />
+    <MESSAGE value="addMovingAction" />
+    <option name="LAST_COMMIT_MESSAGE" value="addMovingAction" />
   </component>
 </project>
